@@ -1,0 +1,8 @@
+header 
+{
+	background : url('images/entete.png');
+	display : flex;
+	justify-content : space-between ; 
+	position : fixe ;
+	margin-top : 2px;
+}
