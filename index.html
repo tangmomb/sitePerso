@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Tanguy M</title>
+        <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="monSite.css"/>
 		
 		<!--ceci est le titre en haut dans le navigateur-->
@@ -12,12 +13,12 @@
 		<div id="pageentiere">
 			<header>
 				<div class="logo" href="monsite.html">
-					<img class='photoentete' src="images/tanguynoir.png" alt="tanguy" title="easter egg" href="monsite.html"/>
+					<a href="index.html"><img class='photoentete' src="images/tanguynoir.png" alt="tanguy" title="easter egg" /></a>
 				</div>
 				
 				<nav>
 					<ul>
-						<li><a id ="useronmonxp" href="monsite.html">Accueil</li></a>
+						<li id="useronmonxp"><a href="index.html">Accueil</li></a>
 						<li><a href="monExperience.html">Mon   experience</li></a>
 						<li><a href="mesCreations.html">Mes   creations</li></a>
 					</ul>
@@ -36,22 +37,41 @@
 			<section>
 				<article>
 					<h1><img src="images/tanguy.png"/></h1>
-					<p class="mavie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod est in eros varius, a auctor magna accumsan. Nullam ultrices 
+          <div class="colonnes">
+  					<p class="mavie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod est in eros varius, a auctor magna accumsan. Nullam ultrices 
+  			feugiat libero, quis commodo urna volutpat id. Suspendisse eu libero interdum, lobortis neque vitae, condimentum nulla. Sed varius massa 
+  			consequat nisi interdum fermentum vitae sit amet dui. Nulla dapibus tortor eu faucibus tempus. Nullam porta eleifend felis a pharetra. Suspendisse 
+  			suscipit blandit est, euismod rutrum risus ornare non. Quisque sit amet ullamcorper magna. Morbi ullamcorper, ex vehicula hendrerit dignissim, eros
+  			sem semper lorem,
+  			sed dictum felis velit ac lectus. Mauris venenatis ligula eu ante rhoncus, sed consequat dui lobortis. Phasellus vel egestas neque.</p>
+          </div>
+			
+          <div class="colonnes">
+					       <p class="mavie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod est in eros varius, a auctor magna accumsan. Nullam ultrices 
 			feugiat libero, quis commodo urna volutpat id. Suspendisse eu libero interdum, lobortis neque vitae, condimentum nulla. Sed varius massa 
 			consequat nisi interdum fermentum vitae sit amet dui. Nulla dapibus tortor eu faucibus tempus. Nullam porta eleifend felis a pharetra. Suspendisse 
 			suscipit blandit est, euismod rutrum risus ornare non. Quisque sit amet ullamcorper magna. Morbi ullamcorper, ex vehicula hendrerit dignissim, eros
 			sem semper lorem,
 			sed dictum felis velit ac lectus. Mauris venenatis ligula eu ante rhoncus, sed consequat dui lobortis. Phasellus vel egestas neque.</p>
+         </div>
 			
-					<p class="mavie">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod est in eros varius, a auctor magna accumsan. Nullam ultrices 
-			feugiat libero, quis commodo urna volutpat id. Suspendisse eu libero interdum, lobortis neque vitae, condimentum nulla. Sed varius massa 
-			consequat nisi interdum fermentum vitae sit amet dui. Nulla dapibus tortor eu faucibus tempus. Nullam porta eleifend felis a pharetra. Suspendisse 
-			suscipit blandit est, euismod rutrum risus ornare non. Quisque sit amet ullamcorper magna. Morbi ullamcorper, ex vehicula hendrerit dignissim, eros
-			sem semper lorem,
-			sed dictum felis velit ac lectus. Mauris venenatis ligula eu ante rhoncus, sed consequat dui lobortis. Phasellus vel egestas neque.</p>
-			
-					<p id="boutonapropos"><a href="#">a propos de moi</a></p>
+					<a id="boutonapropos" href="#">a propos de moi</a>
 				</article>
+      
+      <h2>Contactez-moi</h2>
+      
+      <form method="POST" action="envoiFormulaire.php">
+        <div class="line">
+          <span>Prenom :</span><input type="text" name="prenom"><br>
+        </div>
+        <div class="line">
+          <span>Adresse mail :</span><input type="email" name="email"><br>
+        </div>
+        <div class="line">
+          <span>Message :</span><textarea name="message"></textarea>
+        </div>
+        <input type="submit" value="Envoyer" />
+      </form>
 			
 			<p class="textefooter">suivez-moi sur mes reseaux sociaux</p>
 			
